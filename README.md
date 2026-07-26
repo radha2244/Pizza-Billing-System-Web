@@ -56,9 +56,9 @@ The **Pizza Billing System** is a web-based application developed using **HTML, 
 ![New Order](screenshots/neworder.png)
 
 ### Bill Receipt
-![Bill](screenshots/top_part_bill.png)
+![Bill](screenshots/bill_top_part.png)
 
-![Bill](screenshots/bottom_part_bill.png)
+![Bill](screenshots/bill_bottom_part.png)
 
 ![Bill](screenshots/print_bill.png)
 ### Order History
