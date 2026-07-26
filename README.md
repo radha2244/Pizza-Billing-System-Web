@@ -47,28 +47,25 @@ The **Pizza Billing System** is a web-based application developed using **HTML, 
 ## 📸 Project Screenshots
 
 ### Login Page
-
-(Add your login page screenshot here)
+![Login](screenshots/login.png)
 
 ### Dashboard
-
-(Add your dashboard screenshot here)
+![Dashboard](screenshots/dashboard.png)
 
 ### New Order
-
-(Add your new order screenshot here)
+![New Order](screenshots/neworder.png)
 
 ### Bill Receipt
+![Bill](screenshots/top_part_bill.png)
 
-(Add your bill screenshot here)
+![Bill](screenshots/bottom_part_bill.png)
 
+![Bill](screenshots/print_bill.png)
 ### Order History
-
-(Add your order history screenshot here)
+![Order History](screenshots/history.png)
 
 ### Total Sales
-
-(Add your total sales screenshot here)
+![Total Sales](screenshots/totalsales.png)
 
 ---
 
