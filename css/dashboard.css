@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../images/pizzapic2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    background: rgba(150, 148, 146, 0.5);
+    backdrop-filter: blur(3px);
+    color: white;
+    padding: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 90px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+button {
+    width: 170px;
+    height: 55px;
+    border: none;
+    border-radius: 8px;
+    background: #FF9800;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #E68900;
+    transform: scale(1.05);
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}

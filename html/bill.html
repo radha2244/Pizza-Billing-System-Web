@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Point Bill</title>
+    <link rel="stylesheet" href="../css/bill.css">
+</head>
+<body>
+
+<div class="bill">
+
+    <h1>PIZZA POINT</h1>
+    <p>Ongole, Andhra Pradesh</p>
+    <p>Phone : +91 xxxxxxxxxx</p>
+    <hr>
+    <div class="details">
+        <p><b>Bill No :</b> <span id="billNo"></span></p>
+        <p><b>Date :</b> <span id="date"></span></p>
+        <p><b>Time :</b> <span id="time"></span></p>
+    </div>
+    <hr>
+    <div class="details">
+        <p><b>Customer :</b> <span id="customer"></span></p>
+        <p><b>Phone :</b> <span id="phone"></span></p>
+    </div>
+    <hr>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Amount</th>
+        </tr>
+        <tbody id="billItems">
+        </tbody>
+    </table>
+    <hr>
+    <div class="total">
+
+        <p>Subtotal :
+            ₹<span id="subtotal"></span>
+        </p>
+
+        <p>GST (5%) :
+            ₹<span id="gst"></span>
+        </p>
+
+        <p>Round Off :
+            ₹<span id="roundoff"></span>
+        </p>
+
+        <h2>Total :
+            ₹<span id="total"></span>
+        </h2>
+
+    </div>
+
+    <hr>
+
+    <h3> Thank You! Visit Again </h3>
+
+    <button onclick="window.print()">Print Bill</button>
+    <button onclick="goDashboard()">Dashboard</button>
+</div>
+
+<script src="../js/bill.js"></script>
+</body>
+</html>

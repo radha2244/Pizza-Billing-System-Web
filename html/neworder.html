@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>New Order</title>
+        <link rel="stylesheet" href="../css/neworder.css">
+    </head>
+    <body>
+        <h1>NEW ORDER</h1>
+        <div class="main">
+            <div class="price-box">
+                <h2>Price List</h2>
+                <table>
+                    <tr>
+                        <td>Normal Veg</td>
+                        <td>₹200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Normal Non-Veg</td>
+                        <td>₹250</td>
+                    </tr>
+
+                    <tr>
+                        <td>Deluxe Veg</td>
+                        <td>₹350</td>
+                    </tr>
+
+                    <tr>
+                        <td>Deluxe Non-Veg</td>
+                        <td>₹400</td>
+                    </tr>
+
+                    <tr>
+                        <td>Extra Cheese</td>
+                        <td>₹40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Extra Topping</td>
+                        <td>₹30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Water Bottle</td>
+                        <td>₹20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ketchup</td>
+                        <td>₹5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Soft Drink</td>
+                        <td>₹30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Take Away Cover</td>
+                        <td>₹10</td>
+                    </tr>
+                </table>
+            </div>
+            <form id="orderForm" action="../php/saveorder.php" method="POST">
+                <div class="box">
+                    <div class="row">
+                        <label>Customer Name</label>
+                        <input type="text" id="customerName" name="customerName">
+                    </div>
+
+                    <div class="row">
+                        <label>Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber">
+                    </div>
+
+                    <div class="row">
+                        <label>Pizaa Type</label>
+                        <input type="radio" name="pizzaType" id="normal" value="Normal" onchange="calculateBill()">
+                        <label for="normal" class="option">Normal</label>
+                        <input type="radio" name="pizzaType" id="deluxe" value="Deluxe" onchange="calculateBill()">
+                        <label for="deluxe" class="option">Deluxe</label>
+                    </div>
+
+                    <div class="row">
+                        <label>Category</label>
+                        <input type="radio" name="category" id="veg" value="Veg" onchange="calculateBill()">
+                        <label for="veg" class="option">Veg</label>
+                        <input type="radio" name="category" id="nonveg" value="Non-Veg" onchange="calculateBill()">
+                        <label for="nonveg" class="option">Non-Veg</label>
+                    </div>
+
+                    <div class="row">
+                        <label>Extra Cheese</label>
+                        <input type="checkbox" id="cheese" name="cheese" value="Yes" onchange="calculateBill()">
+                        <label for="cheese" class="option">Yes</label>
+                    </div>
+
+                    <div class="row">
+                        <label>Extra Topping</label>
+                        <input type="checkbox" id="topping" name="topping" value="Yes" onchange="calculateBill()">
+                        <label for="topping" class="option">Yes</label>
+                    </div>
+
+                    <div class="row">
+                        <label>Water Bottle</label>
+                        <input type="number" id="water" name="water" value="0" min="0"
+                            onclick="if(this.value=='0') this.value='';"
+                            onblur="if(this.value=='') this.value='0';" onchange="calculateBill()">
+                    </div>
+
+                    <div class="row">
+                        <label>Ketchup</label>
+                        <input type="number" id="ketchup" name="ketchup" value="0" min="0"
+                        onclick="if(this.value=='0') this.value='';"
+                        onblur="if(this.value=='') this.value='0';" onchange="calculateBill()"> 
+                    </div>
+
+                    <div class="row">
+                        <label>Soft Drink</label>
+                        <input type="number" id="softdrink" name="softdrink" value="0" min="0"
+                        onclick="if(this.value=='0') this.value='';"
+                        onblur="if(this.value=='') this.value='0';" onchange="calculateBill()"> 
+                    </div>
+
+                    <div class="row">
+                        <label>Take Away Cover (₹10)</label>
+                        <input type="checkbox" id="takeaway" name="takeaway" value="Yes" onchange="calculateBill()">
+                        <span class="option">Yes</span>
+                    </div>
+
+                    <div class="price">
+                        Subtotal: ₹<span id="subtotal">0</span>
+                    </div>
+
+                    <div class="price">
+                        GST (5%) : ₹<span id="gst">0.00</span>
+                    </div>
+                    <div class="price">
+                        Round Off : ₹<span id="roundoff">0.00</span>
+                    </div>
+            
+                    <div class="price" style="color: #FFD54F; font-size: 20px;">
+                        Total : ₹<span id="total">0</span>
+                    </div>
+                    <input type="hidden" id="subtotalInput" name="subtotal">
+                    <input type="hidden" id="gstInput" name="gst">
+                    <input type="hidden" id="roundoffInput" name="roundoff">
+                    <input type="hidden" id="totalInput" name="total">
+                    <button type="button" onclick="generateBill()">Generate Bill</button>
+                </div>
+            </form>
+            <script src="../js/script.js"></script>
+        </div>
+        <script>
+            window.addEventListener("pageshow", function (event) {
+                if (event.persisted) {
+                    window.location.replace("dashboard.html");
+                }
+            });
+        </script>
+    </body>
+</html>
