@@ -1,6 +1,6 @@
-# 🍕 Pizza Billing System
+# Pizza Billing System
 
-## 📖 Overview
+## Overview
 
 The **Pizza Billing System** is a web-based application developed using **HTML, CSS, JavaScript, PHP, and MySQL**. It simplifies the billing process in a pizza shop by automating bill generation, maintaining order history, and displaying total sales through a user-friendly interface.
 
@@ -8,16 +8,16 @@ The **Pizza Billing System** is a web-based application developed using **HTML, 
 
 ## ✨ Features
 
-- 🔐 Secure Login
-- 📊 Dashboard
-- 🍕 New Order Management
-- 🧾 Automatic Bill Generation
-- 💰 GST Calculation
-- 🔄 Round-Off Calculation
-- 🖨️ Printable Bill Receipt
-- 📂 Order History
-- 📈 Total Sales Report
-- 💾 MySQL Database Integration
+-  Secure Login
+-  Dashboard
+-  New Order Management
+-  Automatic Bill Generation
+-  GST Calculation
+-  Round-Off Calculation
+-  Printable Bill Receipt
+-  Order History
+-  Total Sales Report
+-  MySQL Database Integration
 
 ---
 
