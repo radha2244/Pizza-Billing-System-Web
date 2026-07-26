@@ -108,4 +108,4 @@ B.Tech – Computer Science Engineering
 
 ## 📄 License
 
-This project is developed for educational and learning purposes.<img width="1920" height="1080" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/c4d4cc91-d6b7-4518-806a-d664e78d6e42" />
+This project is developed for educational and learning purposes.
